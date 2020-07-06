@@ -3,10 +3,10 @@ platform: nangate45             # currently only supports 'nangate'
 design_name: mult_top			# top-level design name
 
 verilog_files:                  # relative path of the source files
-- mult_top.v
-- ELM_Mitchw3.v
-- timescale.v
-sdc_file: mult.sdc        # relative path of the constraint file
+  - mult_top.v
+  - ELM_Mitchw3.v
+  - timescale.v
+sdc_file: constraint.sdc        # relative path of the constraint file
 
 die_area: "0 0 620.15 620.6"            # die area as a box
 core_area: "10.07 11.2 610.27 610.8"    # core area as a box
